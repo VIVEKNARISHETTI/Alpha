@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../icons/rocket.png" type="image/x-icon">
+    <STYLe>
+       
+     .a{
+            width: 300px;
+            border: 10px;
+        }
+        h2::first-letter{
+font-size: larger;
+font-weight: bold;
+color: red;
+
+        }
+        b::after{
+            content: "*";
+            color: blue;
+        }
+        input:invalid{
+            border: 2px solid red;
+        }
+        input:required{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+        }
+      button{
+        padding: 5px 35px;
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 20, 20);
+            border: 2px solid rgb(0, 0, 0);
+          
+        
+       }
+       button:hover{
+        background-color:rgb(0, 0, 0) ;
+        transition: 1.2s;
+        color: red;
+        border: 2px solid rgb(255, 25, 0);
+        cursor: pointer;
+    </STYLe>
+</head>
+<body>
+    <h1 style="color: blue;">NASA
+    <img src=".././pics/nasa.png" alt="nasa" width="30px" height="26px"></h1>
+    
+   <fieldset>
+    <legend><h2 style="font-family: monospace;">Student Registration</h2></legend>
+    <br>
+    <form action="form.html" target="_blank">
+  <fieldset class="a">
+       <legend> <label for="FULLNAME"><B>FULLNAME</B>
+    </legend><input type="text" placeholder="FULLNAME" name="FULLNAME" id="FULLNAME" required pattern="[a-zA-Z]"></label><br>
+</fieldset>
+   <fieldset class="a"> <legend><label for="userName"><b>USERNAME</b>
+</legend><input type="text" placeholder="make your unique id" name="userName" id="userName"  pattern="[a-zA-Z0-9]{0,10}"></label> </fieldset>
+<fieldset  class="a">
+    <legend> <label for="PHONE"><b>PHONE</b>
+ </legend><input type="tel" placeholder="Number" name="PHONE" id="PHONE" pattern="[0-9]{10}"></label><br>
+</fieldset>   
+
+
+<FIELdset class="a">
+<legend> <label for="email"><b>EMAIL</b>
+</legend><input type="email" placeholder="Gmail" name="email" id="email" required pattern="[-zA-Z0-9@]"></label><br>
+</fieldset>  
+<fieldset class="a"> <legend><label for="Age"><b>Age</b>
+</legend><input type="number" placeholder="Age" name="Age" id="Age" min="18" max="80" required></label> </fieldset>
+
+<fieldset class="a"> <legend><label for="D-O-B"><b>D-O-B</b>
+</legend><input type="date" placeholder="Birthday" name="D-O-B" id="D-O-B" max="2006-01-01"></label> </fieldset>
+<FIELdset class="a">
+    <legend> <label for="Portfolio"><b>Portfolio/Resume</b>
+    </legend><input type="file" name="Portfolio" id="Portfolio" ></label><br>
+    </fieldset> 
+<fieldset  class="a">
+    <label for="alpha"><b>Misson to choose</b><br>
+    <Select name="alpha" id="alpha">
+        <optgroup label="Planets" >
+            <option value="">select</option>
+        <option value="Mars">Mars Misson</option>
+        <option value="Earth">Earth Misson</option>
+        <option value="Jupiter">Jupiter Misson</option></optgroup>
+        <optgroup label="Galaxies">
+            <option value="Milkyway">Milkyway</option>
+            <option value="koronis">Andromeda</option>
+            <option value="Whirlpool">Whirlpool</option>
+        </optgroup>
+    </Select></label>
+</fieldset>
+<fieldset class="a">
+    <label for="Trip to"><b>For Planets only</b><br></label>
+  <input list="Trip to"  name="Trip to">
+  <datalist id="Trip to">
+            <option value="">select</option>
+        <option value="Mars">Mars Misson</option>
+        <option value="Earth">Earth Misson</option>
+        <option value="Jupiter">Jupiter Misson</option></datalist>
+    
+
+</fieldset>
+
+<br>
+<fieldset class="a">
+     <legend><textarea name="comments" id="comments" cols="20" rows="5"      ></textarea>
+ </legend>
+</fieldset>
+
+
+
+
+<button>submit</button>
+</form></fieldset>
+    
+</body>
+</html>
